@@ -1,0 +1,25 @@
+﻿@model CreateServiceDto
+@{
+    ViewData["Title"] = "AddService";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+
+    <label>Service Icon</label>
+    <input type="text" asp-for="ServiceIcon" class="form-control" />
+    <span asp-validation-for="ServiceIcon" class="text-danger"></span>
+    <br />
+
+    <label>Service Title</label>
+    <input type="text" asp-for="ServiceTitle" class="form-control" />
+    <span asp-validation-for="ServiceIcon" class="text-danger"></span>
+    <br />
+
+    <label>Service Description</label>
+    <input type="text" asp-for="ServiceDescription" class="form-control" />
+    <br />
+
+    <button class="btn mb-1 btn-rounded btn-outline-info">Add Service</button>
+</form>
+
